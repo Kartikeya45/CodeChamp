@@ -1,0 +1,45 @@
+.editor-textarea {
+  /* width: 80vw; */
+  width: 100%;
+  height: 450px;
+  resize: none;
+  outline: none;
+  /* height: 80vw; */
+}
+
+.editor-language > button {
+  width: 120px;
+}
+
+.reset-btn {
+  width: 24px;
+}
+
+.output-window-opw {
+  /* background-color: rgb(227, 234, 236); */
+}
+
+.bgwhite {
+  background-color: white;
+}
+.problem-option-active {
+  background-color: white;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  padding-top: 5px;
+  padding-top: 5px;
+}
+
+.problem-options {
+  font-size: 16px;
+  padding-top: 3px;
+  padding-top: 3px;
+}
+
+.problem-left {
+ min-height:  750px;
+}
+
+.output-console{
+  min-height: 290px;
+}

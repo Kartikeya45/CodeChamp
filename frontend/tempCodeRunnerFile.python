@@ -1,0 +1,25 @@
+from bs4 import BeautifulSoup
+import pickle
+
+# Load the pickle file
+with open('data/questionBody.pickle', 'rb') as f:
+    data = pickle.load(f)
+
+# Print the loaded data
+html = data[0]['Body']
+print(html)
+
+# Parse the HTML with Beautiful Soup
+soup = BeautifulSoup(html, 'html.parser')
+
+# Extract the question text from the first <p> element
+question = soup.find('p').get_text()
+
+# Extract the test cases from the <pre> elements with class "example"
+test_cases = []
+for example in soup.find_all('pre', class_='example'):
+    input_str, output_str = example.get_text().split('\n')[1:-1]
+    input_val = eval(input_str.split(': ')[1])
+    output_val = eval(output_str.split(': ')[1])
+    test_cases.append((input_val, output_val))
+print(question)

@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "project-name"
+version = "0.1.0"
+description = "Project description"
+authors = [
+    "Kartikeya <kartikeyaangara@gmail.com>"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+leetscrape = "^0.1.11"

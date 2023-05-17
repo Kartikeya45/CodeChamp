@@ -1,0 +1,4 @@
+import random
+x = [1,2,3,4]
+x = set(x)
+print(random.choice(x))
